@@ -1,0 +1,108 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+   }
+header{
+    background-color: rgb(244, 130, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo_photo{
+    width: 50px;
+}
+
+.judul{
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 80px;
+    margin-left: 130px;
+}
+
+.sidebar{
+    background-color: rgb(36, 32, 32);
+    border-right: 2px  solid;
+    width: 100px;
+    padding: 8px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 90px;
+}
+
+.sidebar > nav{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.icons{
+    fill: white;
+}
+
+.maincontent{
+    margin: 15px 15px 15px 0px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+form div label{
+    width: 100px;
+}
+
+form div{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+    align-self: center;
+}
+
+input, select{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    align-self: center;
+}
+
+input:hover, select:hover{
+    background-color: rgba(130, 130, 130, 0.276);
+}
+
+button{
+    background-color: rgb(249, 155, 67);
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: 0px;
+    justify-self: center;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(244, 130, 24);
+    padding: 10px; 
+    text-align: center;
+    color: white;
+}

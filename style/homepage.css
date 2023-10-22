@@ -1,0 +1,106 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+   }
+
+header{
+    background-color: rgb(244, 130, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo_photo{
+    width: 50px;
+}
+
+.judul{
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 80px;
+    margin-left: 130px;
+}
+
+.maincontent{
+    margin-right: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+
+.maincontent div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.maincontent img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(244, 130, 24, 1);
+}
+
+.maincontent img:hover{
+    transform: scale(1.05);
+}
+
+.sidebar{
+    background-color: rgb(36, 32, 32);
+    border-right: 2px  solid;
+    width: 100px;
+    padding: 8px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 90px;
+}
+
+.sidebar > nav{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.icons{
+    fill: white;
+}
+
+.sidebar li{
+    list-style: none;
+}
+
+.sidebar li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer{
+    background-color: rgb(244, 130, 24);
+    padding: 10px; 
+    text-align: center;
+    color: white;
+}

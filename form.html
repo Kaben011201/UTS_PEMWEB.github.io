@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="style/form.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo_photo" src="img/logo-itera-png.png" alt="Logo">
+        </div>
+        <div>
+            <p class="judul">Pendaftaran Mahasiswa</p>
+        </div>
+        <div></div>
+    </header>
+    <main>
+        <section class="sidebar">
+            <nav>
+                <a href="homepage.html">
+                    <svg class="icons" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m274-450 248 248-42 42-320-320 320-320 42 42-248 248h526v60H274Z"/></svg>
+                </a>
+            </nav>
+        </section>
+        <section class="maincontent">
+            <form method="get">
+                <div>
+                    <label for="nama">Nama</label><span>:</span>
+                    <input required type="text" name="nama" id="nama">
+                </div>
+                <div>
+                    <label for="nim">NIM</label><span>:</span>
+                    <input required type="text" name="nim" id="nim">
+                </div>
+                <div>
+                    <label for="prodi">Program Studi</label><span>:</span>
+                    <input type="text" name="prodi" id="prodi">
+                </div>
+                <div>
+                    <label for="email">Email</label><span>:</span>
+                    <input required type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="password">Password</label><span>:</span>
+                    <input required type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="jenis_kelamin">Jenis Kelamin</label><span>:</span>
+                    <select name="jenis_kelamin" id="jenisKelamin">
+                        <option value="pria">Pria</option>
+                        <option value="wanita">Wanita</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="date">Tanggal Lahir</label><span>:</span>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div>
+                    <label for="alamat">Alamat</label><span>:</span>
+                    <input type="text" name="alamat" id="alamat">
+                </div>
+
+                <button id="js-button" type="submit" onclick="addListData()">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;Copyright 2023</p>
+    </footer>
+
+    <script src="script/tableandform.js"></script>
+</body>
+</html>
